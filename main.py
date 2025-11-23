@@ -1,5 +1,8 @@
 # Add the import statements for functions from string_utils.py and equation_utils.py here
-
+import string_utils.py
+import main.ipynb
+import equation_utils.py
+import count_atoms_in_molecule.ipynb
 
 def balance_reaction(reaction): #"Fe2O3 + H2 -> Fe + H2O"
 
