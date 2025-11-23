@@ -1,5 +1,5 @@
 # Add the import statements for necessary sympy functions here
-from sympy import solve, symbols
+from sympy import solve, symbols, Eq
 
 
 ELEMENTS = [
