@@ -12,46 +12,27 @@ def split_before_each_uppercases(formula):
         elif ch.isupper():
             x.append(g)
             g=""
-
             g+=ch
         else:
-            g+=ch
-
-    
-            
-            
-       
-           
-        
-            
+            g+=ch       
     if g!="":   
         x.append(g)
     return x
-
-   
-            
-
-
-def split_at_first_digit(formula):
+    
+def split_at_digit(formula):
     x=""
     y = ""
-    digt=False
-    
-    
+    digt=False    
     for ch in formula:
         if ch.isdigit():
             x+=ch
-            digt=True
-            
-        
-            
-       
-            
+            digt=True            
         elif ch.isalpha():
             y += ch
     if digt==False:
         x+="1"
     return y, int(x)
+    
 def count_atoms_in_molecule(molecular_formula):
     """Takes a molecular formula (string) and returns a dictionary of atom counts.  
     Example: 'H2O' → {'H': 2, 'O': 1}"""
